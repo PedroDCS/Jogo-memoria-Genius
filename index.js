@@ -26,11 +26,11 @@ let acenderCor = (elemento, numero) => {
     numero = numero * 500;
     setTimeout(() => {
         elemento.classList.add('selected')
-    }, numero - 250);
+    }, numero);
 
     setTimeout(() => {
         elemento.classList.remove('selected')
-    });
+    }, numero + 250);
 }
 
 //checa se os botoes clicados são os mesmos da ordem gerada no jogo
